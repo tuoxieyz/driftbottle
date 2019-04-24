@@ -6,6 +6,8 @@ This project includes the following simple functions:
 2. Fishing drifting bottles
 3. After that, the launchers and salvagers can communicate with each other.
 
+You can type `dbcli --help` on the command line to view all client commands and related descriptions.
+
 Concepts that developers can learn or need to focus on:
 1. Ed25519 Signature Authentication
 2. curve25519 key agreement
@@ -22,6 +24,8 @@ Later, I will write a blog to give a more detailed description. And again, this 
 1. 扔漂流瓶
 2. 捞漂流瓶
 3. 之后投放者和打捞者可以相互传递信息
+
+你可以在命令行输入`dbcli --help`查看所有客户端命令和相关描述。
 
 开发人员可以学到或需要关注的概念：
 1. ed25519签名认证
