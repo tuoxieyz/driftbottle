@@ -102,7 +102,7 @@ func (me *user) throwBottle(content string) error {
 
 	tx.Sign(me.SignKey)
 	tx.SignPubKey = me.SignKey.PubKey()
-	
+
 	bz, err := cdc.MarshalJSON(&tx)
 	if err != nil {
 		return err
@@ -190,6 +190,7 @@ func (me *user) salvage() {
 	}
 }
 
+// 读消息，解密
 func (me *user) getMessageOfBottle(bottleID string, mid uint16) {
 	bottle := me.getBottle(bottleID)
 	if bottle == nil {
@@ -242,6 +243,7 @@ func (me *user) getMessageOfBottle(bottleID string, mid uint16) {
 	}
 }
 
+// 回消息，加密
 func (me *user) reply(bottleID, msg string) {
 	bottle := me.getBottle(bottleID)
 	if bottle == nil {
